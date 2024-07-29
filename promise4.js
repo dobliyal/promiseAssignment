@@ -23,6 +23,6 @@ function fetchWithRetry(url, retries) {
     });
 }
 
-fetchWithRetry('https://api.coindesk.com/v1/bpi/currentprce.json', 3)
+fetchWithRetry('https://api.coindesk.com/v1/bpi/currentprice.json', 3)
     .then((data) => console.log('Fetched data:', data))
     .catch((error) => console.error(error));
