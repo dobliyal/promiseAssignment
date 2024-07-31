@@ -10,6 +10,6 @@ function fetchWithTimeout(url, timeout) {
     });
     return Promise.race([fetchPromise, timeoutPromise]);
 }
-fetchWithTimeout('https://api.coindesk.com/v1/bpi/currentprice.json', 1000)
+fetchWithTimeout('https://api.temp.com/v1/bpi/currentprice.json', 1000)
     .then(data => console.log(data))
     .catch(error => console.error(error));
